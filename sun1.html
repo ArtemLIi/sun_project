@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&display=swap" rel="stylesheet">
+	<title>Солнечный путеводитель</title>
+
+</head>
+
+<body>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #100e1b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF9200;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FFB841;
+}
+
+body{
+	background-color: #100e1b;
+    overflow-x: hidden;
+
+}
+
+.container_menu{
+	
+	color:#FF9200;
+	margin: auto auto auto 250px;
+}
+
+.ch1{
+
+
+	font-family: 'IBM Plex Sans JP';
+	letter-spacing: 5px;
+	font-style: oblique;
+	font-size: 95px;
+	user-select: none;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.p1{
+	margin: -40px 0 80px 0;
+	font-weight:bold;
+	font-size: 20px;
+	font-style:oblique;
+	line-height: 1.6;
+}
+
+.sun_on_menu1{
+	background:transparent;
+	width: 550px;
+	position: static;
+	margin: 30px 0 0 180px;
+	display: inline-block;
+	vertical-align: top;
+    transition: transform 0.5s linear;
+}
+
+.box2{
+
+	text-align:center;
+
+	margin:10px 200px 25px 200px;
+
+	padding:50px 30px 50px 30px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 40px;
+
+    border-radius: 12px;
+    background: rgba(255, 146, 0, 0.03);
+    box-shadow: 0 4px 20px rgba(255, 146, 0, 0.08);
+    animation: fadeIn 0.8s ease-out;
+
+}
+
+
+.pform{
+
+color:#FFB841;
+
+}
+
+
+
+form[name='form1']{
+text-align: right;
+    width: 315px;
+    margin: 0 auto;
+
+}
+
+.a11{
+	text-align: center;
+	color: #FFB841;
+}
+
+.a11 a {
+    color: #FFB841;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.a11 a:hover {
+    color: #FF9200;
+    text-decoration: underline;
+}
+
+.XY{
+	text-align: center;
+}
+
+
+
+.BUTTON_MAX{
+	position: fixed; 
+	bottom: 20px;
+    right: 20px;
+    background: transparent;
+    border:none;
+}
+
+.BUTTON_MAX img:hover {
+  transform: scale(1.1);
+}
+
+.star{
+    width: 400px;
+    flex-shrink: 0;
+    margin-top: 50px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.box2 > div {
+    margin-left: auto;  
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-20px); }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-input {
+    background: transparent;
+    border: 1px solid #FFB841;
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: #FFB841;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 4px;
+    outline: none;
+}
+.form-input:focus {
+    border-color: #FF9200;
+    box-shadow: 0 0 6px rgba(255, 146, 0, 0.4);
+}
+.form-input::placeholder {
+    color: rgba(255, 184, 65, 0.5);
+}
+
+.button1 {
+    background: #FF9200;
+    color: #100e1b;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.button1:hover {
+    background: #FFB841;
+}
+</style>
+
+<img class = "text_kvantum" src = "logo_kvantorium.png" width="100">
+
+<div class="container_menu" style="display: flex; align-items: flex-start;">
+
+    
+
+<div>
+<h1 class="ch1">СОЛНЦЕ</h1>
+
+<p class="p1">В данной статье представлен комплексный анализ современных данных о физике Солнца. Рассматриваются фундаментальные характеристики звезды: состав, структура, механизмы термоядерного синтеза, циклы магнитной активности и их влияние на гелиосферу. Особое внимание уделено интерпретации данных, полученных с помощью современных космических обсерваторий (SOHO, SDO, Parker Solar Probe, Solar Orbiter). В работе анализируется серия уникальных космических фотографий, демонстрирующих динамику фотосферы, корональные дыры, протуберанцы и корональные выбросы массы. Представленная визуализация служит наглядной иллюстрацией сложных плазменных процессов. Статья систематизирует важнейшую информацию о влиянии солнечной активности на космическую погоду, работу орбитальных спутников и технологическую инфраструктуру Земли, а также намечает перспективы дальнейших исследований внутреннего строения звезды.</p>
+</div>
+<img src = "sun_on_menu1.png" class = "sun_on_menu1">
+
+</div>
+
+
+
+
+<div class = "box2" style="display: flex; align-items: flex-start;">
+
+<img src = "galaxy.png" class="star">
+
+<div>
+
+<h2 style="color: #FFB841;">Пожалуйста, оставьте свою анкету если захотите поучаствовать в научной экскурсии связаной с космосом</h2>
+
+<form action = "#" method = "GET" name = "form1">
+
+        <p class = "pform"><label>Имя<span>*</span></label>
+		<input type = "text" name = "name" value = "" placeholder = "Иван" class = "form-input"/></p>
+		
+		<p class = "pform"><label>Фамилия<span>*</span></label>
+		<input type = "text" name = "surname" value = "" placeholder = "Иванов" class = "form-input"/></p>
+
+        <p class = "pform"><label>Номер телефона<span>*</span></label>
+		<input type = "tel" name = "phone" value = "" placeholder = "+7 (xxx) xxx-xx-xx" class = "form-input"/></p>
+		
+		<p class = "pform"><label>Электроная почта<span>*</span></label>
+		<input type = "email" name = "email" value = "" placeholder = "example@gmail.com" class = "form-input"/></p>
+		
+		<button type = "submit" class = "button1" >Отправить</button>
+
+</form>
+</div>
+</div>
+
+
+
+<p class="a11"><a href = "info.html">Перейти в научную документацию</a></p>
+
+<button type="button" aria-label="Нажми меня" class="BUTTON_MAX"><img src="max_button.png" alt="Ссылка на контакты в мессенджере Макс" width="50" height="50">
+</button>
+
+<script>
+    const sun = document.querySelector('.sun_on_menu1');
+    window.addEventListener('scroll', () => {
+        const rotation = window.scrollY * 0.5;  
+        sun.style.transform = `rotate(${rotation}deg)`;
+    });
+</script>
+
+</body>
+
+
+
+</html>
